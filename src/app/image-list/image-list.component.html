@@ -1,0 +1,9 @@
+<!-- <app-loader *ngIf="loading; else showList"></app-loader> -->
+<div class="imageContainer" >
+  <div class="imageBox" *ngFor="let image of images">
+    <img src={{image.webformatURL}} />
+    <div class="textBox">
+      <button (click)="renderImageItem(image)">View More</button>
+    </div>
+  </div>
+</div>

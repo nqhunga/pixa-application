@@ -1,0 +1,17 @@
+<div class="navbar" 
+  (scroll)="scrollMe($event)"
+  [ngClass]="status ? 'hide' : ''"
+>
+  <div class="switch-button">
+    <input type="checkbox"
+      [(ngModel)]="checkboxValue"
+      (change)="onChangeCB()"
+    >
+    <h3 class="currentDisplay" >{{checkboxValue ? 'IMAGES' : 'CLIPS'}}</h3>
+  </div>
+
+  <form [formGroup]="searchForm">
+    <input formControlName="query" type="text" #queryText (keyup)="onChange(queryText.value)" [(ngModel)]="queryData"/>
+    <input type="submit" value="Submit" (click)="onSubmit()">
+  </form>
+</div>

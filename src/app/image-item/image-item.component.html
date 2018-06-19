@@ -1,0 +1,26 @@
+<div class="thisImage">
+  <div class="nav-item">
+    <button (click)="changeMain()">Back</button>
+    <a href="https://pixabay.com/">
+      <img src="https://pixabay.com/static/img/logo_square.png" alt="">
+    </a>
+  </div>
+  <div class="box">
+    <div class="imgBox">
+      <img src={{thisImage.largeImageURL}} alt="">
+    </div>
+    <div class="details">
+      <div class="content">
+        <span class="profile-pic">
+          <img src={{thisImage.userImageURL}} alt="" /> 
+        </span>
+        <div class="user-info">
+            <span>User: {{thisImage.user}}</span>
+            <span>Likes: {{thisImage.likes}} </span>
+            <span>Downloads: {{thisImage.downloads}}</span>
+            <span>Views: {{thisImage.views}}</span>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>

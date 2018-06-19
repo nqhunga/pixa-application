@@ -1,0 +1,13 @@
+<div class="thisClip">
+  <div class="nav-item">
+    <button (click)="changeMain()">Back</button>
+    <a href="https://pixabay.com/">
+      <img src="https://pixabay.com/static/img/logo_square.png" alt="">
+    </a>
+  </div>
+  <div class="box">
+    <div class="imgBox">
+      <iframe [src]="trustedData(thisClip)" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>

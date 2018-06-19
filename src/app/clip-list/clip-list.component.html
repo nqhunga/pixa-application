@@ -1,0 +1,8 @@
+<div class="imageContainer" >
+  <div class="imageBox" *ngFor="let clip of clips">
+    <img src="https://i.vimeocdn.com/video/{{clip.picture_id}}_640x360.jpg" />
+    <div class="textBox">
+      <button (click)="renderClipItem(clip)">Show More!</button>
+    </div>
+  </div>
+</div>

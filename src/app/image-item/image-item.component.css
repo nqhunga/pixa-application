@@ -1,0 +1,104 @@
+.thisImage {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.nav-item {
+  height: 80px;
+  background-color: rgba(34, 34, 34, .5);
+}
+
+.nav-item button {
+  float: left;
+}
+
+.nav-item a {
+  float: right;
+  height: 100%;
+  width: 60px;
+}
+
+.nav-item a img {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  position: relative;
+  height: auto;
+  width: 1280px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+  overflow: hidden;
+  transform: translate(0, 0);
+}
+
+.box .imgBox {
+  position: relative;
+  overflow: hidden;
+}
+
+.box .imgBox img {
+  width: 100%;
+  transition: 2s;
+  transform: scale(1);
+}
+
+.box:hover .imgBox img {
+  transform: scale(1.2);
+}
+
+.box .details {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  transition: 1s;
+  opacity: 0;
+  filter: blur(10px);
+  transform: scale(1.5);
+}
+
+.box:hover .details {
+  opacity: .8;
+  filter: blur(0px);
+  transform: scale(1);
+}
+
+.box .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  background: black;
+  color: wheat;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-pic img {
+  border-radius: 10px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+  overflow: hidden;
+  transform: translate(0, 0);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
